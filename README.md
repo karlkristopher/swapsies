@@ -61,7 +61,7 @@ cd client
 npm install
 ```
 
-### Running BCB
+### Running Swapsies
 
 #### Run the following commands from the root folder.
 
