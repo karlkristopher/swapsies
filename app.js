@@ -23,12 +23,12 @@ const MongoStore = require("connect-mongo")(session);
 const app = express();
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/swapsies", {
+  .connect(process.env.DB_URI, {
     useNewUrlParser: true,
   })
   .then((x) => {
     console.log(
-      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+      `Connected to Mongo [Atlas]! Database name: "${x.connections[0].name}"`
     );
   })
   .catch((err) => {
